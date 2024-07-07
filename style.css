@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    /* font-size: 30px; */
+  }
+  
+  #flip-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: 100%;
+    border-radius: 0%;
+    cursor: pointer;
+  }
+  
+  #coin-container {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  #coin {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    /* backface-visibility: hidden; */
+  }
+  
+  #result {
+    font-weight: bold;
+    font-size: 55px;
+    font-family: Tahoma, sans-serif;
+  }
+  #count {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  footer{
+    font-family: sans-serif;
+    text-align: center;
+    /* color: rgb(20, 172, 0); */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);  /* Flip on Y-axis */
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
